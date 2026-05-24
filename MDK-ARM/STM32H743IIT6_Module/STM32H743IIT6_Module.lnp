@@ -1,6 +1,7 @@
 --cpu Cortex-M7.fp.dp
 "stm32h743iit6_module\startup_stm32h743xx.o"
 "stm32h743iit6_module\main.o"
+"stm32h743iit6_module\gpio.o"
 "stm32h743iit6_module\stm32h7xx_it.o"
 "stm32h743iit6_module\stm32h7xx_hal_msp.o"
 "stm32h743iit6_module\stm32h7xx_hal_cortex.o"
@@ -23,7 +24,7 @@
 "stm32h743iit6_module\stm32h7xx_hal_exti.o"
 "stm32h743iit6_module\system_stm32h7xx.o"
 "stm32h743iit6_module\bsp.o"
---library_type=microlib --strict --scatter "STM32H743IIT6_Module\STM32H743IIT6_Module.sct"
+--strict --scatter "STM32H743IIT6_Module\STM32H743IIT6_Module.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "STM32H743IIT6_Module.map" -o STM32H743IIT6_Module\STM32H743IIT6_Module.axf

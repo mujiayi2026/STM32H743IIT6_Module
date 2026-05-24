@@ -2,8 +2,9 @@
 
 void Sys_Init(void)
 {
-    // Initialize hardware components, such as GPIO, UART, etc.
+    // Initialize hardware components
     // This is a placeholder for actual initialization code.
+    LED_Init();
 }
 
 void Sys_Run(void)
