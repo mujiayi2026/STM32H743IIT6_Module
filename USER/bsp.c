@@ -4,13 +4,13 @@ void Sys_Init(void)
 {
     // Initialize hardware components
     // This is a placeholder for actual initialization code.
-    LED_Init();
+    LedInit();
 }
 
 void Sys_Run(void)
 {
     // Main loop for the system. This is where the application logic would go.
-    void KeyScan()
+    KeyScan();
     // Placeholder for main loop code.
 
 }

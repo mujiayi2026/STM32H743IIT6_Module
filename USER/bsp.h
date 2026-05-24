@@ -2,6 +2,7 @@
 #define __BSP_H__
 
 #include "main.h"
+#include "tim.h"
 #include "gpio.h"
 
 #include "led.h"
