@@ -1,5 +1,5 @@
-stm32h743iit6_module/stm32h7xx_hal_i2c_ex.o: \
-  ..\Drivers\STM32H7xx_HAL_Driver\Src\stm32h7xx_hal_i2c_ex.c \
+stm32h743iit6_module/uart.o: ..\USER\UART\uart.c ..\USER\UART\uart.h \
+  ..\USER\bsp.h ..\Core\Inc\main.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h \
   ..\Core\Inc\stm32h7xx_hal_conf.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h \
@@ -27,4 +27,6 @@ stm32h743iit6_module/stm32h7xx_hal_i2c_ex.o: \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h \
-  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h
+  ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h \
+  ..\Core\Inc\tim.h ..\Core\Inc\gpio.h ..\USER\LED\led.h \
+  ..\USER\KEY\key.h ..\USER\TIM\timer.h
