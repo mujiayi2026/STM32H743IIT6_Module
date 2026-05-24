@@ -10,7 +10,7 @@ void Sys_Init(void)
 void Sys_Run(void)
 {
     // Main loop for the system. This is where the application logic would go.
-
+    void KeyScan()
     // Placeholder for main loop code.
 
 }

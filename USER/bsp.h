@@ -2,6 +2,10 @@
 #define __BSP_H__
 
 #include "main.h"
+#include "gpio.h"
+
+#include "led.h"
+#include "key.h"
 
 #include <stdio.h>
 #include <string.h>

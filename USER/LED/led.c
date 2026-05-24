@@ -1,4 +1,3 @@
-// Created by Mujiayi on 2026/5/24.
 // Led 引脚 PB0 PB1
 
 #include "led.h"
