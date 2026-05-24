@@ -26,4 +26,5 @@ stm32h743iit6_module/led.o: ..\USER\LED\led.c ..\USER\LED\led.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\gpio.h ..\USER\KEY\key.h
+  ..\Core\Inc\tim.h ..\Core\Inc\gpio.h ..\USER\KEY\key.h \
+  ..\USER\TIM\timer.h

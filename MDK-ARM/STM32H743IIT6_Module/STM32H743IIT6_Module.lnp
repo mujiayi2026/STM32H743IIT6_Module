@@ -27,6 +27,7 @@
 "stm32h743iit6_module\bsp.o"
 "stm32h743iit6_module\led.o"
 "stm32h743iit6_module\key.o"
+"stm32h743iit6_module\time.o"
 --strict --scatter "STM32H743IIT6_Module\STM32H743IIT6_Module.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

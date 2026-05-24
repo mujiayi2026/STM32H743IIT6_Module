@@ -1,4 +1,5 @@
-stm32h743iit6_module/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
+stm32h743iit6_module/time.o: ..\USER\TIM\time.c ..\USER\TIM\timer.h \
+  ..\USER\bsp.h ..\Core\Inc\main.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h \
   ..\Core\Inc\stm32h7xx_hal_conf.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_rcc.h \
@@ -25,5 +26,5 @@ stm32h743iit6_module/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_pwr_ex.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\gpio.h ..\USER\bsp.h ..\USER\LED\led.h \
-  ..\USER\KEY\key.h ..\USER\TIM\timer.h
+  ..\Core\Inc\tim.h ..\Core\Inc\gpio.h ..\USER\LED\led.h \
+  ..\USER\KEY\key.h

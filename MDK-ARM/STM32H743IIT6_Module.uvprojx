@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H743xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\USER;..\USER\LED;..\USER\KEY</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;..\USER;..\USER\LED;..\USER\KEY;..\USER\TIM</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -646,6 +646,11 @@
               <FileName>key.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\USER\KEY\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\TIM\time.c</FilePath>
             </File>
           </Files>
         </Group>

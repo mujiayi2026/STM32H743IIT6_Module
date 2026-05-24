@@ -7,6 +7,7 @@
 
 #include "led.h"
 #include "key.h"
+#include "timer.h"
 
 #include <stdio.h>
 #include <string.h>
