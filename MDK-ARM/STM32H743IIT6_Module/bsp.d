@@ -27,5 +27,6 @@ stm32h743iit6_module/bsp.o: ..\USER\bsp.c ..\USER\bsp.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\gpio.h ..\USER\LED\led.h \
-  ..\USER\KEY\key.h ..\USER\TIM\timer.h
+  ..\Core\Inc\dma.h ..\Core\Inc\tim.h ..\Core\Inc\usart.h \
+  ..\Core\Inc\gpio.h ..\USER\LED\led.h ..\USER\KEY\key.h \
+  ..\USER\TIM\timer.h ..\USER\UART\uart.h

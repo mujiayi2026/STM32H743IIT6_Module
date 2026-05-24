@@ -1,17 +1,23 @@
-// Led 引脚 PB0 PB1
+/**
+ * @file led.c
+ * @brief LED模块驱动程序
+ * @author mujiayi
+ * @date 2026-05-24
+ *
+ * 硬件配置：
+ * - LED_RED:   PB0
+ * - LED_GREEN: PB1
+ */
 
 #include "led.h"
 
-void LedInit()
+/**
+ * @brief LED初始化函数
+ * @details 将LED引脚初始化为高电平（熄灭状态）
+ * @return void
+ */
+void LedInit(void)
 {
-	//灯灭,设置低电平
-	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);
-	HAL_GPIO_WritePin(GPIOB,GPIO_PIN_1,GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_SET);
 }
-
-
-//LED操作函数
-//HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_RESET);   //将PB0置低
-//HAL_GPIO_WritePin(GPIOB,GPIO_PIN_0,GPIO_PIN_SET);     //将PB0置高
-//HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_0);                 //将PB0取反
-//GPIOB->ODR                                            //PB端口的寄存器，可进行位操作

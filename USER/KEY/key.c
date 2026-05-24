@@ -1,50 +1,71 @@
-/*
-按键硬件说明：
-PA0     连接 WAKE_UP    上拉
-PH3     连接 KEY0       下拉
-PH2     连接 KEY1       下拉
-PC13    连接 KEY2       下拉
-*/
+/**
+ * @file key.c
+ * @brief 按键扫描模块
+ * @author mujiayi
+ * @date 2026-05-24
+ *
+ * 硬件配置：
+ * - WAKE_UP (PA0):  上拉输入
+ * - KEY0 (PH3):     下拉输入
+ * - KEY1 (PH2):     下拉输入
+ * - KEY2 (PC13):    下拉输入
+ *
+ * 功能说明：
+ * 使用状态机方式检测按键，20ms消抖周期
+ * 需配合轮询或定时器中断使用
+ */
 
 #include "key.h"
 
-unsigned int keytick=0;
-bool k0l,k1l,k2l,wkl;
-bool k0 ,k1 ,k2 ,wk ;
+static unsigned int key_tick = 0;
+static bool k0_last, k1_last, k2_last, wk_last;
+static bool k0_curr, k1_curr, k2_curr, wk_curr;
 
-/*
-KeyScan函数使用了状态机的方式，需要使用轮询或者定时器中断配合使用
-*/
-void KeyScan()
+/**
+ * @brief 按键扫描函数
+ * @details 20ms扫描一次按键状态，实现消抖
+ *          检测按键下降沿和上升沿，控制LED亮灭
+ * @return void
+ */
+void KeyScan(void)
 {
-    //每20ms扫描一次按键状态，消抖
-	if(HAL_GetTick()-keytick<20)return;
-	else 
-	{
-		keytick = HAL_GetTick();
-		k0=K0,k1=K1,k2=K2,wk=WK;
-		if(!k0 & k0l)//KEY0下降沿
-		{
-			HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_0);
-		}
-		if(!k1 & k1l)//KEY1下降沿
-		{
-			HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_1);
-		}
-		if(!k2 & k2l)//KEY2下降沿
-		{
-			HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_0);
-			HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_1);
-		}
-		
-		if(wk & !wkl)//WAKEUP上升沿
-		{
-			HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_0);
-			HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_1);
-		}
-		k0l=k0;
-		k1l=k1;
-		k2l=k2;
-		wkl=wk;
-	}
+  /* 20ms消抖周期检查 */
+  if (HAL_GetTick() - key_tick < 20)
+    return;
+
+  key_tick = HAL_GetTick();
+
+  /* 读取当前按键状态 */
+  k0_curr = K0;
+  k1_curr = K1;
+  k2_curr = K2;
+  wk_curr = WK;
+
+  /* KEY0按下（下降沿）：切换红灯 */
+  if (!k0_curr && k0_last) {
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+  }
+
+  /* KEY1按下（下降沿）：切换绿灯 */
+  if (!k1_curr && k1_last) {
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
+  }
+
+  /* KEY2按下（下降沿）：同时切换红绿灯 */
+  if (!k2_curr && k2_last) {
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
+  }
+
+  /* WAKE_UP按下（上升沿）：同时切换红绿灯 */
+  if (wk_curr && !wk_last) {
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
+    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
+  }
+
+  /* 保存本次状态作为下次比较基准 */
+  k0_last = k0_curr;
+  k1_last = k1_curr;
+	k2_last = k2_curr;
+  wk_last = wk_curr;
 }

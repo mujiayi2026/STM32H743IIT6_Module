@@ -35,10 +35,11 @@ I (..\Core\Inc\dma.h)(0x6A12FC5C)
 I (..\Core\Inc\tim.h)(0x6A12FC5C)
 I (..\Core\Inc\usart.h)(0x6A12FC5D)
 I (..\Core\Inc\gpio.h)(0x6A12FC5C)
-I (..\USER\bsp.h)(0x6A12FBFB)
-I (..\USER\LED\led.h)(0x6A12FB03)
-I (..\USER\KEY\key.h)(0x6A12F9A2)
-I (..\USER\TIM\timer.h)(0x6A12FBD6)
+I (..\USER\bsp.h)(0x6A12FFFF)
+I (..\USER\LED\led.h)(0x6A12FFF7)
+I (..\USER\KEY\key.h)(0x6A12FFF7)
+I (..\USER\TIM\timer.h)(0x6A12FFF7)
+I (..\USER\UART\uart.h)(0x6A12FFF7)
 F (../Core/Src/gpio.c)(0x6A12FC5C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/gpio.o -MMD)
 I (..\Core\Inc\gpio.h)(0x6A12FC5C)
 I (..\Core\Inc\main.h)(0x6A12FC5D)
@@ -833,8 +834,8 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6A12EF52)
-F (..\USER\bsp.c)(0x6A12FB1B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/bsp.o -MMD)
-I (..\USER\bsp.h)(0x6A12FBFB)
+F (..\USER\bsp.c)(0x6A12FFEB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/bsp.o -MMD)
+I (..\USER\bsp.h)(0x6A12FFFF)
 I (..\Core\Inc\main.h)(0x6A12FC5D)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6A12EF52)
 I (..\Core\Inc\stm32h7xx_hal_conf.h)(0x6A12FC5D)
@@ -864,14 +865,17 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6A12EF52)
+I (..\Core\Inc\dma.h)(0x6A12FC5C)
 I (..\Core\Inc\tim.h)(0x6A12FC5C)
+I (..\Core\Inc\usart.h)(0x6A12FC5D)
 I (..\Core\Inc\gpio.h)(0x6A12FC5C)
-I (..\USER\LED\led.h)(0x6A12FB03)
-I (..\USER\KEY\key.h)(0x6A12F9A2)
-I (..\USER\TIM\timer.h)(0x6A12FBD6)
-F (..\USER\LED\led.c)(0x6A12FA2C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/led.o -MMD)
-I (..\USER\LED\led.h)(0x6A12FB03)
-I (..\USER\bsp.h)(0x6A12FBFB)
+I (..\USER\LED\led.h)(0x6A12FFF7)
+I (..\USER\KEY\key.h)(0x6A12FFF7)
+I (..\USER\TIM\timer.h)(0x6A12FFF7)
+I (..\USER\UART\uart.h)(0x6A12FFF7)
+F (..\USER\LED\led.c)(0x6A12FFDD)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/led.o -MMD)
+I (..\USER\LED\led.h)(0x6A12FFF7)
+I (..\USER\bsp.h)(0x6A12FFFF)
 I (..\Core\Inc\main.h)(0x6A12FC5D)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6A12EF52)
 I (..\Core\Inc\stm32h7xx_hal_conf.h)(0x6A12FC5D)
@@ -901,13 +905,16 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6A12EF52)
+I (..\Core\Inc\dma.h)(0x6A12FC5C)
 I (..\Core\Inc\tim.h)(0x6A12FC5C)
+I (..\Core\Inc\usart.h)(0x6A12FC5D)
 I (..\Core\Inc\gpio.h)(0x6A12FC5C)
-I (..\USER\KEY\key.h)(0x6A12F9A2)
-I (..\USER\TIM\timer.h)(0x6A12FBD6)
-F (..\USER\KEY\key.c)(0x6A12FA20)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/key.o -MMD)
-I (..\USER\KEY\key.h)(0x6A12F9A2)
-I (..\USER\bsp.h)(0x6A12FBFB)
+I (..\USER\KEY\key.h)(0x6A12FFF7)
+I (..\USER\TIM\timer.h)(0x6A12FFF7)
+I (..\USER\UART\uart.h)(0x6A12FFF7)
+F (..\USER\KEY\key.c)(0x6A13004B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/key.o -MMD)
+I (..\USER\KEY\key.h)(0x6A12FFF7)
+I (..\USER\bsp.h)(0x6A12FFFF)
 I (..\Core\Inc\main.h)(0x6A12FC5D)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6A12EF52)
 I (..\Core\Inc\stm32h7xx_hal_conf.h)(0x6A12FC5D)
@@ -937,13 +944,16 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6A12EF52)
+I (..\Core\Inc\dma.h)(0x6A12FC5C)
 I (..\Core\Inc\tim.h)(0x6A12FC5C)
+I (..\Core\Inc\usart.h)(0x6A12FC5D)
 I (..\Core\Inc\gpio.h)(0x6A12FC5C)
-I (..\USER\LED\led.h)(0x6A12FB03)
-I (..\USER\TIM\timer.h)(0x6A12FBD6)
-F (..\USER\TIM\time.c)(0x6A12FC12)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/time.o -MMD)
-I (..\USER\TIM\timer.h)(0x6A12FBD6)
-I (..\USER\bsp.h)(0x6A12FBFB)
+I (..\USER\LED\led.h)(0x6A12FFF7)
+I (..\USER\TIM\timer.h)(0x6A12FFF7)
+I (..\USER\UART\uart.h)(0x6A12FFF7)
+F (..\USER\TIM\time.c)(0x6A12FFEB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/time.o -MMD)
+I (..\USER\TIM\timer.h)(0x6A12FFF7)
+I (..\USER\bsp.h)(0x6A12FFFF)
 I (..\Core\Inc\main.h)(0x6A12FC5D)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6A12EF52)
 I (..\Core\Inc\stm32h7xx_hal_conf.h)(0x6A12FC5D)
@@ -973,13 +983,16 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6A12EF52)
+I (..\Core\Inc\dma.h)(0x6A12FC5C)
 I (..\Core\Inc\tim.h)(0x6A12FC5C)
+I (..\Core\Inc\usart.h)(0x6A12FC5D)
 I (..\Core\Inc\gpio.h)(0x6A12FC5C)
-I (..\USER\LED\led.h)(0x6A12FB03)
-I (..\USER\KEY\key.h)(0x6A12F9A2)
-F (..\USER\UART\uart.c)(0x6A12FCCA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/uart.o -MMD)
-I (..\USER\UART\uart.h)(0x6A12FCA1)
-I (..\USER\bsp.h)(0x6A12FBFB)
+I (..\USER\LED\led.h)(0x6A12FFF7)
+I (..\USER\KEY\key.h)(0x6A12FFF7)
+I (..\USER\UART\uart.h)(0x6A12FFF7)
+F (..\USER\UART\uart.c)(0x6A13002A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc -I ../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I ../Drivers/CMSIS/Include -I ../USER -I ../USER/LED -I ../USER/KEY -I ../USER/TIM -I ../USER/UART-I./RTE/_STM32H743IIT6_Module-IE:/Mujiayi/Software/KeilForARM/Pack/ARM/CMSIS/6.3.0/CMSIS/Core/Include-D__UVISION_VERSION="543" -DSTM32H743xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32H743xx-o stm32h743iit6_module/uart.o -MMD)
+I (..\USER\UART\uart.h)(0x6A12FFF7)
+I (..\USER\bsp.h)(0x6A12FFFF)
 I (..\Core\Inc\main.h)(0x6A12FC5D)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h)(0x6A12EF52)
 I (..\Core\Inc\stm32h7xx_hal_conf.h)(0x6A12FC5D)
@@ -1009,8 +1022,10 @@ I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_tim_ex.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart.h)(0x6A12EF52)
 I (..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h)(0x6A12EF52)
+I (..\Core\Inc\dma.h)(0x6A12FC5C)
 I (..\Core\Inc\tim.h)(0x6A12FC5C)
+I (..\Core\Inc\usart.h)(0x6A12FC5D)
 I (..\Core\Inc\gpio.h)(0x6A12FC5C)
-I (..\USER\LED\led.h)(0x6A12FB03)
-I (..\USER\KEY\key.h)(0x6A12F9A2)
-I (..\USER\TIM\timer.h)(0x6A12FBD6)
+I (..\USER\LED\led.h)(0x6A12FFF7)
+I (..\USER\KEY\key.h)(0x6A12FFF7)
+I (..\USER\TIM\timer.h)(0x6A12FFF7)

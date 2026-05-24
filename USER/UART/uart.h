@@ -1,3 +1,10 @@
+/**
+ * @file uart.h
+ * @brief UART1串口通信模块头文件
+ * @author mujiayi
+ * @date 2026-05-24
+ */
+
 #ifndef __UART_H__
 #define __UART_H__
 
