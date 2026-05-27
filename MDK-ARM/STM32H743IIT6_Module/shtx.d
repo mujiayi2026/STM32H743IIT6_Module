@@ -1,4 +1,4 @@
-stm32h743iit6_module/time.o: ..\USER\TIM\time.c ..\USER\TIM\timer.h \
+stm32h743iit6_module/shtx.o: ..\USER\Sensor\shtx.c ..\USER\Sensor\shtx.h \
   ..\USER\bsp.h ..\Core\Inc\main.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal.h \
   ..\Core\Inc\stm32h7xx_hal_conf.h \
@@ -30,4 +30,4 @@ stm32h743iit6_module/time.o: ..\USER\TIM\time.c ..\USER\TIM\timer.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h \
   ..\Core\Inc\dma.h ..\Core\Inc\i2c.h ..\Core\Inc\tim.h \
   ..\Core\Inc\usart.h ..\Core\Inc\gpio.h ..\USER\LED\led.h \
-  ..\USER\KEY\key.h ..\USER\UART\uart.h ..\USER\Sensor\shtx.h
+  ..\USER\KEY\key.h ..\USER\TIM\timer.h ..\USER\UART\uart.h

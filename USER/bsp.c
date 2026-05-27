@@ -22,6 +22,7 @@ void Sys_Init(void)
   LedInit();
   TimerInit();
   UartInit();
+	SensorInit();
 }
 
 /**

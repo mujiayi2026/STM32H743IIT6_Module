@@ -41,6 +41,7 @@ int fputc(int ch, FILE *f)
 void UartInit(void)
 {
   HAL_UARTEx_ReceiveToIdle_DMA(&huart1, Rx, sizeof(Rx));
+	printf("UART Success\r\n");
 }
 
 /**

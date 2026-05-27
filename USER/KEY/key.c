@@ -59,8 +59,7 @@ void KeyScan(void)
 
   /* WAKE_UP按下（上升沿）：同时切换红绿灯 */
   if (wk_curr && !wk_last) {
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);
-    HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_1);
+    SensorShow();
   }
 
   /* 保存本次状态作为下次比较基准 */

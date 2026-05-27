@@ -19,6 +19,7 @@
 void TimerInit(void)
 {
   HAL_TIM_Base_Start_IT(&htim6);
+	printf("TIM Success\r\n");
 }
 
 /**
@@ -31,5 +32,6 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 {
   if (htim->Instance == TIM6) {
     /* 定时器6中断处理代码 */
+		
   }
 }

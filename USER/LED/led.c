@@ -20,4 +20,5 @@ void LedInit(void)
 {
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_1, GPIO_PIN_RESET);
+	printf("LED Success\r\n");
 }
