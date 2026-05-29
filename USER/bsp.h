@@ -22,7 +22,7 @@
 #include "uart.h"
 
 #include "shtx.h"
-
+#include "hcsr04.h"
 
 #include <stdio.h>
 #include <string.h>
@@ -32,5 +32,7 @@
 
 void Sys_Init(void);
 void Sys_Run(void);
+void delay_us(uint32_t nus);
+void delay_ms(uint16_t nms);
 
 #endif /* __BSP_H__ */

@@ -30,4 +30,4 @@ stm32h743iit6_module/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Core\Inc\dma.h ..\Core\Inc\i2c.h ..\Core\Inc\tim.h \
   ..\Core\Inc\usart.h ..\Core\Inc\gpio.h ..\USER\bsp.h ..\USER\LED\led.h \
   ..\USER\KEY\key.h ..\USER\TIM\timer.h ..\USER\UART\uart.h \
-  ..\USER\Sensor\shtx.h
+  ..\USER\Sensor\shtx.h ..\USER\Sensor\hcsr04.h

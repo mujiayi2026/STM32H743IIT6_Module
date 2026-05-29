@@ -30,4 +30,5 @@ stm32h743iit6_module/led.o: ..\USER\LED\led.c ..\USER\LED\led.h \
   ..\Drivers\STM32H7xx_HAL_Driver\Inc\stm32h7xx_hal_uart_ex.h \
   ..\Core\Inc\dma.h ..\Core\Inc\i2c.h ..\Core\Inc\tim.h \
   ..\Core\Inc\usart.h ..\Core\Inc\gpio.h ..\USER\KEY\key.h \
-  ..\USER\TIM\timer.h ..\USER\UART\uart.h ..\USER\Sensor\shtx.h
+  ..\USER\TIM\timer.h ..\USER\UART\uart.h ..\USER\Sensor\shtx.h \
+  ..\USER\Sensor\hcsr04.h

@@ -341,7 +341,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32H743xx,USE_PWR_LDO_SUPPLY</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../USER;../USER/LED;../USER/KEY;../USER/TIM;../USER/UART;..\USER\Sensor</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc;../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32H7xx/Include;../Drivers/CMSIS/Include;../USER;../USER/LED;../USER/KEY;../USER/TIM;../USER/UART;../USER/Sensor</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -724,6 +724,11 @@
               <FileName>shtx.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\USER\Sensor\shtx.c</FilePath>
+            </File>
+            <File>
+              <FileName>hcsr04.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\USER\Sensor\hcsr04.c</FilePath>
             </File>
           </Files>
         </Group>
